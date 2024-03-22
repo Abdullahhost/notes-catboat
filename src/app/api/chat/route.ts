@@ -4,6 +4,8 @@ import { auth } from "@clerk/nextjs";
 import { ChatCompletionMessage } from "openai/resources/index.mjs";
 import { OpenAIStream, StreamingTextResponse } from "ai";
 
+import prisma from "@/lib/db/prisma";
+
 export async function POST(req: Request) {
     try {
         const { messages } = await req.json();

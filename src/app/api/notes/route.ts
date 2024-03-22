@@ -4,6 +4,9 @@ import { getEmbading } from "@/lib/openai";
 import { createNoteValidation, deleteNoteValidation, updateNoteValidation } from "@/lib/validation/notes";
 import { auth } from "@clerk/nextjs";
 
+
+import prisma from "@/lib/db/prisma";
+
 export async function POST(req: Request) {
 
 	try {
