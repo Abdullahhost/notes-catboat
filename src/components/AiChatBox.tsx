@@ -74,7 +74,7 @@ export const AiChatBox = ({
                         <XCircle size={30} color={"#fff"} />
                     </button>
                 </div>
-                <div style={{ background: "linear-gradient(#fff1 40% , #0009)" }} className="h-full max:h-[600px] flex flex-col rounded-md border-rborder-t dark:border-neutral-700 backdrop-blur-[2px] shadow-2xl
+                <div style={{ background: "linear-gradient(#fff1 40% , #0009)" }} className="h-full md:h-[600px] flex flex-col rounded-md border-rborder-t dark:border-neutral-700 backdrop-blur-[2px] shadow-2xl
                  dark:bg-[#0001] relative">
                     {/* <video autoPlay loop muted className="object-cover absolute top-0 left-0 w-full min-h-full -z-10">
                         <source src="/bg1.mp4" type="video/mp4" />
