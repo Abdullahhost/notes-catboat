@@ -42,7 +42,7 @@ const AddEditNoteDialog = ({ open, setOpen, editDialog }: AddEditNoteDialogProps
 		try {
 
 			if (editDialog) {
-				const response = await fetch('https://notes-catboat.vercel.app/api/notes', {
+				const response = await fetch('/api/notes', {
 					method: 'PUT',
 					body: JSON.stringify({
 						id: editDialog.id,
@@ -52,7 +52,7 @@ const AddEditNoteDialog = ({ open, setOpen, editDialog }: AddEditNoteDialogProps
 				if (!response.ok) throw new Error("Status :" + response.status);
 
 			} else {
-				const response = await fetch('https://notes-catboat.vercel.app/api/notes', {
+				const response = await fetch('/api/notes', {
 					method: 'POST',
 					body: JSON.stringify(input),
 				})
