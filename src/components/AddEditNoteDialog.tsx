@@ -129,11 +129,11 @@ const AddEditNoteDialog = ({ open, setOpen, editDialog }: AddEditNoteDialogProps
 									</FormItem>
 								)}
 							/>
-							<DialogFooter >
-								<LoadingBUtton className="xl:mb-3" onClick={onDeleteNote} variant={"destructive"} type="button" loading={deleteInProgress} disabled={form.formState.isSubmitting}>
+							<DialogFooter>
+								<LoadingBUtton onClick={onDeleteNote} variant={"destructive"} type="button" loading={deleteInProgress} disabled={form.formState.isSubmitting}>
 									Delete
 								</LoadingBUtton>
-								<LoadingBUtton type="submit" loading={form.formState.isSubmitting}>
+								<LoadingBUtton className="mb-2 md:mb-0" type="submit" loading={form.formState.isSubmitting}>
 									Submit
 								</LoadingBUtton>
 

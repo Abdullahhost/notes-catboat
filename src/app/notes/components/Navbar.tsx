@@ -26,13 +26,13 @@ const Navbar = () => {
     return (
         <>
             <nav className="mx-auto max-w-[78rem] shadow  dark:shadow-slate-700 px-4 py-3">
-                <div className='flex gap-3 items-center justify-between'>
+                <div className='flex gap-2 items-center justify-between flex-col md:flex-row'>
                     <div>
                         <Link href={"/notes"}>
-                            <Image className='rounded-full' style={{ userSelect: "none" }} src={logo} alt='Logo iamge' width={45} height={45} />
+                            <Image className='rounded-full' style={{ userSelect: "none" }} src={logo} alt='Logo iamge' width={48} height={48} />
                         </Link>
                     </div>
-                    <div className='flex items-center gap-4'>
+                    <div className='flex items-center gap-2 md:gap-4'>
                         <UserButton afterSignOutUrl='/'
                             appearance={{
                                 baseTheme: theme === "dark" ? dark : undefined,
