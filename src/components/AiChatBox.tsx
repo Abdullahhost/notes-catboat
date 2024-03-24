@@ -68,14 +68,14 @@ export const AiChatBox = ({
 
     return (
         <>
-            <div ref={toggleRef} className={cn("bottom-0 right-0 z-40 w-full max-w-[500px] p-1 xl:right-24 ", open ? "fixed" : "hidden")}>
+            <div ref={toggleRef} className={cn("bottom-0 right-0 m-1 z-40 w-[95%] max-w-[500px] p-1 xl:right-24 ", open ? "fixed" : "hidden")}>
                 <div>
                     <button className="block ms-auto  mb-2" onClick={onClose}>
                         <XCircle size={30} color={"#fff"} />
                     </button>
                 </div>
-                <div style={{ background: "linear-gradient(#fff1 40% , #0009)" }} className="h-full md:h-[600px] flex flex-col rounded-md border-rborder-t dark:border-neutral-700 backdrop-blur-[2px] shadow-2xl
-                 dark:bg-[#0001] relative">
+                <div style={{ background: "linear-gradient(#fff1 40% , #0009)" }} className="max-h-[90vh] md:h-[600px] flex flex-col rounded-md border-rborder-t dark:border-neutral-700 backdrop-blur-[2px] shadow-2xl
+                 dark:bg-[#0001] relative ">
                     {/* <video autoPlay loop muted className="object-cover absolute top-0 left-0 w-full min-h-full -z-10">
                         <source src="/bg1.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
